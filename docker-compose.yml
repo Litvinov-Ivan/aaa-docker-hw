@@ -1,9 +1,9 @@
 version: "3"
 
+"""Использовать одновременно и build . и image: server избыточно, потому строка image: server:0.0.1 удалена."""
 services:
   server:
     build: .
-    image: server:0.0.1
     ports:
       - "8080:8080"
     networks:
